@@ -2,21 +2,24 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-project (GameDevelopmentProject)
+project (GameEngine)
 
 set(PROJECT_SOURCE_FILES
   source/main.cpp
-        source/Game.cpp
-        source/Game.h
+  source/Game.h
+  source/Game.cpp
 )
+
+include_directories(engine/thirdparty/glew/include)
+
 # Add the application
 include_directories(source)
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_FILES} "source/Game.h")
 
-# Add engine library
 add_compile_definitions(GLEW_NO_GLU)
 add_subdirectory(engine "${CMAKE_CURRENT_BINARY_DIR}/engine_build")
 include_directories(engine/source)
-target_link_libraries(${PROJECT_NAME}
+# Link engine library
+target_link_libraries(${PROJECT_NAME} 
     Engine
 )

@@ -1,19 +1,23 @@
-#include "Input/InputManager.h"
-namespace eng {
-    void InputManager::SetKeyPressed(int keyCode, bool pressed) {
-        if ( keyCode<0 || keyCode>= static_cast<int>(m_keys.size()))
+#include "input/InputManager.h"
+
+namespace eng
+{
+    void InputManager::SetKeyPressed(int key, bool pressed)
+    {
+        if (key < 0 || key >= static_cast<int>(m_keys.size()))
         {
             return;
         }
-        m_keys[keyCode] = pressed;
+        m_keys[key] = pressed;
     }
 
-
-    bool InputManager::IsKeyPressed(int keyCode) {
-        if ( keyCode<0 || keyCode>= static_cast<int>(m_keys.size()))
+    bool InputManager::IsKeyPressed(int key)
+    {
+        if (key < 0 || key >= static_cast<int>(m_keys.size()))
         {
             return false;
         }
-        return m_keys[keyCode];
+
+        return m_keys[key];
     }
 }

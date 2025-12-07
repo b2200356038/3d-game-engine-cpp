@@ -1,4 +1,7 @@
 #pragma once
+
 #include "Application.h"
 #include "Engine.h"
-#include "Input/InputManager.h"
+#include "input/InputManager.h"
+#include "graphics/ShaderProgram.h"
+#include "graphics/GraphicsAPI.h"

@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/cmake_install.cmake",
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/engine_build/cmake_install.cmake",
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/engine_build/glfw_build/cmake_install.cmake",
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/engine_build/glfw_build/src/cmake_install.cmake",
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/engine_build/glfw_build/docs/cmake_install.cmake",
+		"C:/Users/berka/Desktop/3d-game-engine-cpp/cmake-build-debug/engine_build/glew_build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
